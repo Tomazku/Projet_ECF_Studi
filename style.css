@@ -129,28 +129,31 @@ header {
     .container-trio {
       display: flex;
       width: 90%;
-    }
+      margin: auto;
+      text-align: center;
+
+       }
+
 
     .container-trio img{
       width: 450px;
       height: 300px;
       border-radius: 5px;
-      padding-top: 50px;
+      padding: 50px ;
     }
     
-    .bloc {
-      text-align: center;
-    }
 
-    .bloc h2{
+    .middle-bloc h2{
       font-size: 2.5rem;
       font-weight: bold;
-      margin: 30px;
-    }
-    .bloc{
-      width: 100%;
-      text-align: center;
       
+    }
+
+    .middle-bloc p{
+      text-align: justify;
+      line-height: 1.3;
+      padding: 0 20px;
+
     }
     
     
