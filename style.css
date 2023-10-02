@@ -13,6 +13,9 @@ body {
 header {
     height: 100px;
     background:#8D7471;
+    position: sticky;
+    top: 0;
+    z-index: 99;
   }
 
   .header{
@@ -317,4 +320,56 @@ header {
     .star:hover,
   .star:hover ~ .star {
   color: #FF9F1C;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #8D7471; 
+  padding: 20px;
+}
+
+.section {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.contact-info i {
+  width: 30%;
+  margin-right: 5px;
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  color: #28323D;
+}
+
+.useful-links li {
+  margin-bottom: 5px;
+  
+}
+
+.copyright {
+  background-color: #00A6FB; /* Couleur de fond bleue */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Styles menu ouvert */
+.menu.open {
+  display: flex;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+} 
+
+.menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }

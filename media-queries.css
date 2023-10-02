@@ -1,9 +1,0 @@
-@media (max-width: 600px) {
-    .container-middle {
-      flex-direction: column;
-    }
-@media (max-width: 600px) {
-        .container-trio {
-          flex-direction: column;
-        }
-}

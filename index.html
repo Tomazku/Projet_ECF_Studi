@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garage V. Parrot</title>
-    <link rel="icon" type="Favicon" href="./Ressources/FavIcon.webp">
+    <link rel="icon" type="image/x-icon" href="./Ressources/FavIcon.webp">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
 </head>
 <body>
-    <header>
+    <header class="header_sticky">
       <div class="header">
         <div class="logo">
           <img src="./Ressources/logo-no-background.png" alt="Logo">
         </div>
-        
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+        <div class="menu">
         <nav>
           <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Nos services</a></li>
-            <li><a href="#">Véicules d'occasion</a></li>
+            <li><a href="#">Véhicules d'occasion</a></li>
+            <li><a href="#">Horaires d'ouverture</a></li>
             <li><a href="#">Nous contacter</a></li>
           </ul>
         </nav>
+      </div>
+
         
         <div class="company-name">
           Garage V. Parrot
@@ -273,7 +281,31 @@
         </form>
       
       </section>
-
-      
+      <footer>
+        <div class="section">
+          <p>N'hésitez pas à nous contacter directement pour toute demande d'information</p>
+        </div>
+        <div class="section contact-info">
+          <h3>RESTONS EN CONTACT</h3>
+          <address>
+            <p><i class="fa fa-map-marker"></i> 123 Rue de la Ville, Ville</p>
+            <p><i class="fa fa-phone"></i> +33 123 456 789</p>
+            <p><i class="fa fa-envelope"></i> contact@example.com</p>
+          </address>
+        </div>
+        <div class="section useful-links">
+          <h3>Liens Utiles</h3>
+          <ul>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">Voitures d'occasion</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        
+      </footer>
+      <div class="copyright">
+        <p>© Garage V. Parrot - Tout droits reservé</p>
+      </div>
+      <script src="script.js"></script>
     </body>
 </html>
