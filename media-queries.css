@@ -1,10 +1,21 @@
 @media screen and (max-width: 900px) {
-    .main-nav ul {
-      display: none; /* Masquer le menu sur les écrans plus étroits */
+ .main-nav ul {
+        display: flex;
+ }
+.nav-toggler {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: baseline;
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-toggler img {
+  width: 20px;
+}
+    .company-name{
+margin: auto;    }
     }
-  
-    .main-nav ul.show {
-      display: flex; /* Afficher le menu lorsqu'il est ouvert */
-      flex-direction: column;
-    }
-  }

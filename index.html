@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+  <body>
+    <div class="loader">
+        <div class="car"></div>
+        <div class="smoke"></div>
+    </div>
     <header class="header_sticky">
       <div class="header">
         <div class="logo">
@@ -17,18 +22,20 @@
         </div>
         <div class="menu">
           <nav class="main-nav" id="main-nav">
-            <ul>
+            <button
+          aria-controls="main-navlist"
+          aria-expanded="false"
+          class="nav-toggler"
+        >
+          <img src="ressources/hamburger.svg" alt="Ouvrir et fermer le menu" />
+        </button>
+            <ul id="main-navlist">
               <li><a href="#">Accueil</a></li>
               <li><a href="#">Nos services</a></li>
               <li><a href="#">Véhicules d'occasion</a></li>
               <li><a href="#">Horaires d'ouverture</a></li>
               <li><a href="#">Nous contacter</a></li>
             </ul>
-            <div class="hamburger-menu" onclick="toggleMenu()" id="hamburger-menu">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </div>
           </nav>
       </div>
 
