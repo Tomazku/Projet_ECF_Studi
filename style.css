@@ -7,10 +7,11 @@ body {
   font-family: open sans, sans-serif;
   background-color: #f1f1f1;
   color: #28323D;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 header {
+  width: 100vw;
     height: 100px;
     background:#8D7471;
     position: sticky;
@@ -31,13 +32,26 @@ header {
     padding: 10px;
 }
 
+.hamburger-menu {
+  display: none; /* Masquer le bouton hamburger par défaut */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #28323D;
+  margin: 4px 0;
+}
+
   nav ul {
     list-style: none;
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: bold
   }
 
@@ -45,6 +59,7 @@ header {
     text-decoration: none;
     color: #333;
     padding: 15px;
+    font-size: 1.2rem;
   }
 
   nav a:hover {
@@ -77,6 +92,7 @@ header {
     background: rgba(141,116,113,0.8);
     max-width: 600px;
     border-radius: 5px;
+    font-size: 1rem
   }
 
   .banner-text h1 {

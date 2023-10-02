@@ -1,0 +1,10 @@
+@media screen and (max-width: 900px) {
+    .main-nav ul {
+      display: none; /* Masquer le menu sur les écrans plus étroits */
+    }
+  
+    .main-nav ul.show {
+      display: flex; /* Afficher le menu lorsqu'il est ouvert */
+      flex-direction: column;
+    }
+  }

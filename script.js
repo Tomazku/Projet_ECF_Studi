@@ -16,15 +16,19 @@ window.addEventListener("scroll", function() {
   }
 });
 
-// Fonction pour afficher le menu hamburger au clic à partir de 500px
+const hamburgerMenu = document.getElementById(".hamburger-menu");
+const mainNav = document.getElementById(".main-nav");
 
-window.addEventListener("scroll", function() {
-  const header = document.querySelector(".header");
-  const scrollY = window.scrollY;
-
-  if (scrollY > 500) {
-    header.querySelector(".menu-icon").classList.add("active");
-  } else {
-    header.querySelector(".menu-icon").classList.remove("active");
-  }
+hamburgerMenu.addEventListener("click", () => {
+  mainNav.classList.toggle("open");
 });
+
+const mediaQuery = window.matchMedia("(min-width: 900px)");
+function checkMediaQuery(mediaQuery) {
+  if (mediaQuery.matches) {
+    mainNav.classList.remove("open");
+  }
+}
+
+mediaQuery.addListener(checkMediaQuery);
+checkMediaQuery(mediaQuery);

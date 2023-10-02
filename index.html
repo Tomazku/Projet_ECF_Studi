@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="./Ressources/FavIcon.webp">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header class="header_sticky">
@@ -14,21 +15,21 @@
         <div class="logo">
           <img src="./Ressources/logo-no-background.png" alt="Logo">
         </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-          <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </div>
         <div class="menu">
-        <nav>
-          <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Nos services</a></li>
-            <li><a href="#">Véhicules d'occasion</a></li>
-            <li><a href="#">Horaires d'ouverture</a></li>
-            <li><a href="#">Nous contacter</a></li>
-          </ul>
-        </nav>
+          <nav class="main-nav" id="main-nav">
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Véhicules d'occasion</a></li>
+              <li><a href="#">Horaires d'ouverture</a></li>
+              <li><a href="#">Nous contacter</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu()" id="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </nav>
       </div>
 
         
